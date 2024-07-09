@@ -13,6 +13,7 @@ jobs:
       AWS_REGION_1: "ap-south-1"
       ECS_CLUSTER: "ecs-cluster"
       ECS_SERVICE: "ecs-service"
+      ECS_TASK_DEFINITION: .github/workflows/task-definition.json
       IMAGE_REPO_NAME: "ecr-dev"
       SECRET_ID: "demo-secret"
 
