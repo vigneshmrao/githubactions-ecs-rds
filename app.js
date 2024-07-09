@@ -1,6 +1,6 @@
 const express = require('express');
 const logger = require('./logger');
-const { fetchData } = require('./secret-manager-dev/index');
+const { fetchData } = require('../secret-manager-dev/index');
 
 const app = express();
 const port = 3000;
