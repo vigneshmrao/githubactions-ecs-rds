@@ -1,0 +1,14 @@
+{
+  "name": "ecs-deploy-example",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.95.0",
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  }
+}
+
