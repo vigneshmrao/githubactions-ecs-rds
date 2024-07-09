@@ -1,7 +1,11 @@
-# Dockerfile
 FROM node:14
-WORKDIR /app
-COPY . .
-RUN echo "console.log('Hello, World!')" > index.js
-CMD ["node", "index.js"]
 
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD ["node", "app.js"]
