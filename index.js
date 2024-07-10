@@ -29,18 +29,18 @@ const getSecretValue = async (secretName) => {
     }
 };
  
-// API endpoint to print the secret value
-// app.get('/secret/:name', async (req, res) => {
-//     console.log("Input-->",req.params);
-//     const secretName = req.params.name;
-//     const secretValue = await getSecretValue(secretName);
+ API endpoint to print the secret value
+ app.get('/secret/:name', async (req, res) => {
+     console.log("Input-->",req.params);
+     const secretName = req.params.name;
+     const secretValue = await getSecretValue(secretName);
     
-//     if (secretValue) {
-//         res.send(`The value of the secret ${secretName} is: ${secretValue}`);
-//     } else {
-//         res.status(500).send('Failed to retrieve the secret value');
-//     }
-// });
+     if (secretValue) {
+         res.send(`The value of the secret ${secretName} is: ${secretValue}`);
+     } else {
+         res.status(500).send('Failed to retrieve the secret value');
+     }
+ });
  
 
 getSecretValue("demo-secret")
