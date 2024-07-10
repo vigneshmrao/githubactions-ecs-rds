@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express();
 const port =3000;
-const AWS = require('aws-sdk');
- 
-
+const AWS = require('aws-sdk'); 
  
 const secretsManager = new AWS.SecretsManager({
     region: 'ap-south-1' // e.g., 'us-west-2'
