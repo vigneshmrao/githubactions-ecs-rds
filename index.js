@@ -7,7 +7,7 @@ const secretsManager = new AWS.SecretsManager({
     region: 'ap-south-1' // e.g., 'us-west-2'
 });
  
- Function to get secret value
+// Function to get secret value
 const getSecretValue = async (secretName) => {
     console.log("===========");
     try {
