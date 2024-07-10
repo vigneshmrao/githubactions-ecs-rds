@@ -6,7 +6,7 @@ const AWS = require('aws-sdk');
 
  
 const secretsManager = new AWS.SecretsManager({
-    region: 'ap-southeast-1' // e.g., 'us-west-2'
+    region: 'ap-south-1' // e.g., 'us-west-2'
 });
  
 // Function to get secret value
